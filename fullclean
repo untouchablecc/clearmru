@@ -114,3 +114,8 @@ REGEDIT4
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\System]
 "MaxSize"=dword:00000000
+REGEDIT4
+
+; Clear clipboard history
+[HKEY_CURRENT_USER\Software\Microsoft\Clipboard]
+"History"=""
