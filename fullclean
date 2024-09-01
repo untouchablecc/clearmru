@@ -1,0 +1,87 @@
+REGEDIT4
+
+; Clearing Recent Documents
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU]
+"a"=""
+"MRUList"="abcdefghijklmnopqrstuvwxyz"
+"b"=""
+"c"=""
+"d"=""
+"e"=""
+"f"=""
+"g"=""
+"h"=""
+"i"=""
+"j"=""
+"k"=""
+"l"=""
+"m"=""
+"n"=""
+"o"=""
+"p"=""
+"q"=""
+"r"=""
+"s"=""
+"t"=""
+"u"=""
+"v"=""
+"w"=""
+"x"=""
+"y"=""
+"z"=""
+
+; Clearing Prefetch Files
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters]
+"EnablePrefetcher"=dword:00000000
+
+; Clearing Event Logs
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog\Application]
+"*"=""
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog\Security]
+"*"=""
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog\Setup]
+"*"=""
+
+; Clearing Startup Entries
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]
+"*"=""
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run]
+"*"=""
+
+; Clearing Search Indexing
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SearchHistory]
+"*"=""
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search]
+"*"=""
+
+; Clearing Internet Explorer Data
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings]
+"*"=""
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\TypedURLs]
+"*"=""
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes]
+"*"=""
+
+; Clearing Windows Explorer Settings
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"*"=""
+
+; Clearing System-wide Application Data
+[HKEY_LOCAL_MACHINE\Software\YourTargetFile]
+"*"=""
+
+[HKEY_LOCAL_MACHINE\Software\Wow6432Node\YourTargetFile]
+"*"=""
+
+; Clearing File Associations
+[HKEY_CURRENT_USER\Software\Classes\YourTargetFile]
+"*"=""
+
+[HKEY_LOCAL_MACHINE\Software\Classes\YourTargetFile]
+"*"=""
