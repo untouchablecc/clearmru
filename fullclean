@@ -1,6 +1,6 @@
 REGEDIT4
 
-; Clearing Recent Documents
+; Clear RunMRU list
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU]
 "a"=""
 "MRUList"="abcdefghijklmnopqrstuvwxyz"
@@ -30,58 +30,87 @@ REGEDIT4
 "y"=""
 "z"=""
 
-; Clearing Prefetch Files
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters]
-"EnablePrefetcher"=dword:00000000
+; Clear Recent Documents
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs]
+"Count"=dword:00000000
+"MaxCount"=dword:00000000
 
-; Clearing Event Logs
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog\Application]
-"*"=""
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog\Security]
-"*"=""
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog\Setup]
-"*"=""
-
-; Clearing Startup Entries
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]
-"*"=""
-
-[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run]
-"*"=""
-
-; Clearing Search Indexing
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SearchHistory]
-"*"=""
-
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search]
-"*"=""
-
-; Clearing Internet Explorer Data
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings]
-"*"=""
-
+; Clear TypedURLs in Internet Explorer
 [HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\TypedURLs]
-"*"=""
+"url1"=""
+"url2"=""
+"url3"=""
+"url4"=""
+"url5"=""
+"url6"=""
+"url7"=""
+"url8"=""
+"url9"=""
+"url10"=""
 
-[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes]
-"*"=""
+; Clear Internet Explorer History
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Internet Update]
+"LastSync"=dword:00000000
 
-; Clearing Windows Explorer Settings
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
-"*"=""
+; Clear Microsoft Edge History
+[HKEY_CURRENT_USER\Software\Microsoft\Edge\Feeds]
+"ShowFavoritesBar"=dword:00000000
+"ShowFavorites"=dword:00000000
+"ShowQuickLinks"=dword:00000000
 
-; Clearing System-wide Application Data
-[HKEY_LOCAL_MACHINE\Software\YourTargetFile]
-"*"=""
+; Clear Mozilla Firefox History
+[HKEY_CURRENT_USER\Software\Mozilla\Firefox\Profiles\]
+"BrowserHistory"=""
 
-[HKEY_LOCAL_MACHINE\Software\Wow6432Node\YourTargetFile]
-"*"=""
+; Clear Google Chrome History
+[HKEY_CURRENT_USER\Software\Google\Chrome\History]
+"PageCount"=dword:00000000
+"PageURLs"=""
 
-; Clearing File Associations
-[HKEY_CURRENT_USER\Software\Classes\YourTargetFile]
-"*"=""
+; Clear Opera History
+[HKEY_CURRENT_USER\Software\Opera Software\Opera Stable\History]
+"PageCount"=dword:00000000
+"PageURLs"=""
 
-[HKEY_LOCAL_MACHINE\Software\Classes\YourTargetFile]
-"*"=""
+; Clear Windows Search History
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search]
+"SearchHistory"=""
+
+; Clear Windows Clipboard History
+[HKEY_CURRENT_USER\Software\Microsoft\Clipboard]
+"History"=""
+
+; Clear Windows Prefetch Data
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"PrefetchParameters"=""
+
+; Clear Windows Event Logs
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\Application]
+"MaxSize"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\Security]
+"MaxSize"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\System]
+"MaxSize"=dword:00000000
+
+; Clear Windows Temporary Files
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders]
+"Cache"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders]
+"Temp"="%temp%"
+
+; Clear Windows Recent Files
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs]
+"Count"=dword:00000000
+
+; Clear Windows Logs
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\Application]
+"MaxSize"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\Security]
+"MaxSize"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\System]
+"MaxSize"=dword:00000000
